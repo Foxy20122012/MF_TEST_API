@@ -1,5 +1,5 @@
 import { pool } from "../db.js";
-import { getAllProductDetails, getProductDetailsById, createProductDetails, updateProductDetails, deleteProductDetails } from '../models/query/productDetailsQuery.js';
+import { getAllProductDetails, getProductDetailsById, createProductDetails, updateProductDetails, deleteProductDetails } from '../models/query/productsDestailsQuery.js';
 
 export const getProductDetails = async (req, res) => {
     try {
