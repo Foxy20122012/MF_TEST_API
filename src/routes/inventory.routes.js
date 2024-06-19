@@ -1,10 +1,13 @@
 import { Router } from "express";
-import { index} from "../controllers/index.controllers.js";
+import { getInventorys, getInventoryItem, addInventoryItem, editInventoryItem, removeInventoryItem  } from "../controllers/invetory.controllers.js";
 
 const router = Router();
 
-router.get("/", index);
-
+router.get("/inventory", getInventorys);
+router.get('/inventory/:id', getInventoryItem);
+router.post('/inventory', addInventoryItem);
+router.put('/inventory/:id', editInventoryItem);
+router.delete('/inventory/:id', removeInventoryItem);
 
 
 export default router;

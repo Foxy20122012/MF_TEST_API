@@ -8,6 +8,7 @@ import productsRoutes from "./routes/product.routes.js"
 import categoriesRoutes from './routes/categories.routes.js'
 import employeesRoutes from './routes/employees.routes.js'
 import customersRoutes from './routes/customers.routes.js'
+import inventayRoutes from './routes/inventory.routes.js'
 
 const app = express();
 app.use(morgan("dev"));
@@ -24,6 +25,7 @@ app.use("/api",productsRoutes);
 app.use("/api",categoriesRoutes);
 app.use("/api", employeesRoutes);
 app.use("/api", customersRoutes)
+app.use("/api", inventayRoutes)
 
 app.use(notFound);
 
